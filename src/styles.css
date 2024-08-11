@@ -1,0 +1,71 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.active {
+  border: 1px solid lightblue;
+}
+
+.input-container {
+  position: relative;
+  display: flex;
+  width: 25em;
+  background-color: white;
+  height: 1.4em;
+}
+
+.input-container input {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  z-index: 3;
+  border: 0px;
+  outline: none;
+  width: inherit;
+  height: inherit;
+  top: 0;
+  left: 0;
+  background-color: transparent;
+  padding: 0px 18px;
+  font-size: 16px;
+}
+
+.autofill {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  color: light-grey;
+  top: 0;
+  left: 0;
+  width: inherit;
+  height: inherit;
+  border: 0px;
+  outline: none;
+  color: blue;
+  padding: 0px 18px;
+  font-size: 16px;
+}
+
+.body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+  background-color: tomato;
+}
+
+.search {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.listbox {
+  position: absolute;
+  top: 100%;
+}
+
+.sublist {
+  padding-left: 20px;
+}
