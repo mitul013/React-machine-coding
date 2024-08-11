@@ -95,7 +95,7 @@ function Pagination({ currentPage, totalPage, onPageChange, length = 2 }) {
               border: "1px solid black",
               padding: "5px",
             }}
-            onClick={() => onPageChange(1)}
+            onClick={() => onPageChange(totalPage)}
           >
             {totalPage}
           </div>
