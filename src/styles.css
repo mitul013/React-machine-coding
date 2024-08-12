@@ -69,3 +69,8 @@
 .sublist {
   padding-left: 20px;
 }
+
+.otp-container {
+  display: flex;
+  gap: 20px;
+}

@@ -7,6 +7,7 @@ import AppComment from "./AppComment";
 import InfiniteScrollList from "./ReactVirtulisation/InfiniteScrollList";
 import NestedCheckBox from "./NestedCheckBox/NestedCheckbox";
 import AppPagination from "./AppPagination";
+import AppOtp from "./AppOtp";
 
 const rootElement = document.getElementById("root");
 const root = createRoot(rootElement);
@@ -55,8 +56,9 @@ root.render(
     {/* <AppAccordian />
     <AppSearchBox />
     <AppComment /> */}
-    <InfiniteScrollList items={items} containerHeight={500} itemHeight={100} />
-    <NestedCheckBox />
-    <AppPagination />
+    {/* <InfiniteScrollList items={items} containerHeight={500} itemHeight={100} /> */}
+    {/* <NestedCheckBox /> */}
+    {/* <AppPagination /> */}
+    <AppOtp />
   </StrictMode>
 );
