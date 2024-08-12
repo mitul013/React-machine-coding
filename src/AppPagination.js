@@ -1,5 +1,5 @@
 import { useState } from "react";
-import Pagination from "./Pagination";
+import Pagination from "./Pagination/Pagination";
 
 function AppPagination() {
   const [cur, setCur] = useState(1);

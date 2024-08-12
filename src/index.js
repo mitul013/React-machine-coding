@@ -4,9 +4,8 @@ import { createRoot } from "react-dom/client";
 import AppAccordian from "./AppAccordian";
 import AppSearchBox from "./AppSearchBox";
 import AppComment from "./AppComment";
-import InfiniteScrollList from "./InfiniteScrollList";
-import NestedCheckBox from "./NestedCheckbox";
-import Pagination from "./Pagination";
+import InfiniteScrollList from "./ReactVirtulisation/InfiniteScrollList";
+import NestedCheckBox from "./NestedCheckBox/NestedCheckbox";
 import AppPagination from "./AppPagination";
 
 const rootElement = document.getElementById("root");
@@ -56,7 +55,7 @@ root.render(
     {/* <AppAccordian />
     <AppSearchBox />
     <AppComment /> */}
-    {/* <InfiniteScrollList items={items} containerHeight={500} itemHeight={100} /> */}
+    <InfiniteScrollList items={items} containerHeight={500} itemHeight={100} />
     <NestedCheckBox />
     <AppPagination />
   </StrictMode>
