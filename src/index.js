@@ -8,6 +8,7 @@ import InfiniteScrollList from "./ReactVirtulisation/InfiniteScrollList";
 import NestedCheckBox from "./NestedCheckBox/NestedCheckbox";
 import AppPagination from "./AppPagination";
 import AppOtp from "./AppOtp";
+import TicTaeToe from "./TicTaeToe/TicTaeToe";
 
 const rootElement = document.getElementById("root");
 const root = createRoot(rootElement);
@@ -59,6 +60,7 @@ root.render(
     {/* <InfiniteScrollList items={items} containerHeight={500} itemHeight={100} /> */}
     {/* <NestedCheckBox /> */}
     {/* <AppPagination /> */}
-    <AppOtp />
+    {/* <AppOtp /> */}
+    <TicTaeToe />
   </StrictMode>
 );
