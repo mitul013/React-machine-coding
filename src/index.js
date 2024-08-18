@@ -9,6 +9,7 @@ import NestedCheckBox from "./NestedCheckBox/NestedCheckbox";
 import AppPagination from "./AppPagination";
 import AppOtp from "./AppOtp";
 import TicTaeToe from "./TicTaeToe/TicTaeToe";
+import SnakeGame from "./snake-game/SnakeGame";
 
 const rootElement = document.getElementById("root");
 const root = createRoot(rootElement);
@@ -53,7 +54,7 @@ const items = [
 ];
 
 root.render(
-  <StrictMode>
+  <>
     {/* <AppAccordian />
     <AppSearchBox />
     <AppComment /> */}
@@ -61,6 +62,7 @@ root.render(
     {/* <NestedCheckBox /> */}
     {/* <AppPagination /> */}
     {/* <AppOtp /> */}
-    <TicTaeToe />
-  </StrictMode>
+    {/* <TicTaeToe /> */}
+    <SnakeGame />
+  </>
 );
