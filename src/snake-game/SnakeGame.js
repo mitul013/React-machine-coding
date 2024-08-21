@@ -7,11 +7,12 @@ function createBoard(rowSize, columnSize = rowSize) {
 
 const SnakeGame = ({ rowSize = 20, columnSize = rowSize }) => {
   const [board, setBoard] = useState(createBoard(rowSize));
-  const [snakeSet, setSnakeSet] = useState(new Set([32, 33, 34]));
+  const [snakeSet, setSnakeSet] = useState(new Set([20, 21, 22]));
   const directionRef = useRef({ x: 0, y: 1 });
   const gameOverRef = useRef(false);
   const [isGameOver, setIsGameOver] = useState(false);
   const foodRef = useRef(null);
+  const eventTimeRef = useRef(null);
 
   const timeRef = useRef(null);
 
@@ -31,16 +32,19 @@ const SnakeGame = ({ rowSize = 20, columnSize = rowSize }) => {
   };
 
   const keyDown = (e) => {
-    let { x, y } = directionRef.current;
-    if (e.key === "ArrowDown" && x != -1 && y != 0) {
-      directionRef.current = { x: 1, y: 0 };
-    } else if (e.key === "ArrowUp" && x != 1 && y != 0) {
-      directionRef.current = { x: -1, y: 0 };
-    } else if (e.key === "ArrowRight" && x != 0 && y != -1) {
-      directionRef.current = { x: 0, y: 1 };
-    } else if (e.key === "ArrowLeft" && x != 0 && y != 1) {
-      directionRef.current = { x: 0, y: -1 };
-    }
+    if (eventTimeRef.current) clearTimeout(eventTimeRef.current);
+    eventTimeRef.current = setTimeout(() => {
+      let { x, y } = directionRef.current;
+      if (e.key === "ArrowDown" && x != -1 && y != 0) {
+        directionRef.current = { x: 1, y: 0 };
+      } else if (e.key === "ArrowUp" && x != 1 && y != 0) {
+        directionRef.current = { x: -1, y: 0 };
+      } else if (e.key === "ArrowRight" && x != 0 && y != -1) {
+        directionRef.current = { x: 0, y: 1 };
+      } else if (e.key === "ArrowLeft" && x != 0 && y != 1) {
+        directionRef.current = { x: 0, y: -1 };
+      }
+    }, 50);
   };
 
   const addEvevnts = () => {
