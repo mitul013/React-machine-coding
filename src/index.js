@@ -10,6 +10,7 @@ import AppPagination from "./AppPagination";
 import AppOtp from "./AppOtp";
 import TicTaeToe from "./TicTaeToe/TicTaeToe";
 import SnakeGame from "./snake-game/SnakeGame";
+import CountryCapitalGame from "./CountryCapitalGame/CountryCapitalGame";
 
 const rootElement = document.getElementById("root");
 const root = createRoot(rootElement);
@@ -63,6 +64,7 @@ root.render(
     {/* <AppPagination /> */}
     {/* <AppOtp /> */}
     {/* <TicTaeToe /> */}
-    <SnakeGame />
+    {/* <SnakeGame /> */}
+    <CountryCapitalGame />
   </>
 );
