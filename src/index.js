@@ -11,6 +11,8 @@ import AppOtp from "./AppOtp";
 import TicTaeToe from "./TicTaeToe/TicTaeToe";
 import SnakeGame from "./snake-game/SnakeGame";
 import CountryCapitalGame from "./CountryCapitalGame/CountryCapitalGame";
+import PintrestLayout from "./pintrest/pintrest-layout";
+
 
 const rootElement = document.getElementById("root");
 const root = createRoot(rootElement);
@@ -66,5 +68,6 @@ root.render(
     {/* <TicTaeToe /> */}
     {/* <SnakeGame /> */}
     <CountryCapitalGame />
+    {/* <PintrestLayout /> */}
   </>
 );
