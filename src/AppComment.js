@@ -24,7 +24,7 @@ const AppComment = () => {
     },
     {
       id: 3,
-      comment: "Hello How were you?",
+      comment: "Hello ?",
       items: [
         {
           id: 4,
@@ -33,9 +33,13 @@ const AppComment = () => {
       ],
     },
   ];
-  const { tree, setTree, updateCommentVisibility } = useComment(data);
+  const { tree, deleteComment, insertComment } = useComment(data);
   return (
-    <CommentList commentList={tree} onCommentClick={updateCommentVisibility} />
+    <CommentList
+      commentList={tree}
+      onDelete={deleteComment}
+      onInsert={insertComment}
+    />
   );
 };
 

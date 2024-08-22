@@ -59,9 +59,9 @@ const items = [
 
 root.render(
   <>
-    {/* <AppAccordian />
-    <AppSearchBox />
-    <AppComment /> */}
+    {/* <AppAccordian /> */}
+    {/* <AppSearchBox /> */}
+    <AppComment />
     {/* <InfiniteScrollList items={items} containerHeight={500} itemHeight={100} /> */}
     {/* <NestedCheckBox /> */}
     {/* <AppPagination /> */}
@@ -71,6 +71,6 @@ root.render(
     {/* <CountryCapitalGame /> */}
     {/* <MineSweeper /> */}
     {/* <PintrestLayout /> */}
-    <InlineSuggestion />
+    {/* <InlineSuggestion /> */}
   </>
 );
