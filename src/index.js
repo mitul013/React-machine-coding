@@ -13,6 +13,7 @@ import SnakeGame from "./snake-game/SnakeGame";
 import CountryCapitalGame from "./CountryCapitalGame/CountryCapitalGame";
 import PintrestLayout from "./pintrest/pintrest-layout";
 import MineSweeper from "./minesweeper/MineSweeper";
+import InlineSuggestion from "./InlineSuggestion/InlineSuggestion";
 
 const rootElement = document.getElementById("root");
 const root = createRoot(rootElement);
@@ -68,7 +69,8 @@ root.render(
     {/* <TicTaeToe /> */}
     {/* <SnakeGame /> */}
     {/* <CountryCapitalGame /> */}
-    <MineSweeper />
+    {/* <MineSweeper /> */}
     {/* <PintrestLayout /> */}
+    <InlineSuggestion />
   </>
 );
